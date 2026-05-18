@@ -4,10 +4,10 @@ const AuthLayout = () => {
   const isAuthenticated = false; // Replace with actual authentication logic
   return (
     isAuthenticated ? (
-      <Navigate to="/login" />
+      <Navigate to="/" />
     ) : (
         <>
-          <section>
+          <section className="flex flex-1 justify-center items-center flex-col py-10">
             <Outlet/>
           </section>
         </>
